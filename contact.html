@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Crete+Round&family=EB+Garamond&family=Frank+Ruhl+Libre:wght@300&family=Great+Vibes&family=Lobster&family=Niconne&family=Noto+Serif+Georgian:wght@600&family=Oleo+Script+Swash+Caps&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
+    <title>Contact Page !</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="contactHead">
+            <h1 class="p-4 text-center text-light">Contact</h1>
+        </div>
+        <div class="container">
+            <p class="contactText">Please use this contact form to get in touch with the MyShop Stories team with
+                regard to the content
+                published on stories.MyShop.com only. Please note that complaints about products sold on MyShop or
+                customer support emails will not receive a response. For such issues, please tweet to @MyShopsupport
+            </p>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <!-- <div class="col-sm-3"></div> -->
+                <!-- <div class="col-sm-6"> -->
+
+                <form class="row g-3 needs-validation" novalidate>
+                    <div class="col-sm-3"></div>
+                    <div class="col-sm-6">
+                        <div class="mb-3 p-4 formBox">
+                            <label for="validationCustom02" class="form-label">Email</label>
+                            <input type="email" class="form-control py-3 email_input" id="validationCustom02" value=""
+                                required placeholder="Enter e-mail address" style="border: none;">
+                            <hr style="margin-top: -10px;">
+                            <!-- <div class="valid-feedback"></div> -->
+                        </div>
+
+                        <div class="mb-3 p-4 formBox">
+                            <label for="validationCustom02" class="form-label">Name</label>
+                            <input type="text" class="form-control py-3 email_input" id="validationCustom02" value=""
+                                required placeholder="Enter Your Name" style="border: none;">
+                            <hr style="margin-top: -10px;">
+                            <!-- <div class="valid-feedback"></div> -->
+                        </div>
+
+                        <div class="mb-3 p-4 formBox">
+                            <label for="validationCustom02" class="form-label">Comment</label>
+                            <input type="text" class="form-control py-3 email_input" id="validationCustom02" value=""
+                                required placeholder="Your Answer" style="border: none;">
+                            <hr style="margin-top: -10px;">
+                            <!-- <div class="valid-feedback"></div> -->
+                        </div>
+
+                        <p class="contactText2">A copy of your responses will be emailed to the address that your
+                            provided.</p>
+                        <button class="btn px-3 btnName" type="submit"><img src="img/submit.png" alt="" style="width: 70px; margin-top: 0px;" ></button>
+                        <!-- <button class="btn btn-success px-3 btnName" type="submit">Submit</button> -->
+                        <!-- <input class="btn btn-danger float-end px-4" type="reset" value="Reset"> -->
+                        <button class="btn float-end px-3 btnName" type="reset"><img src="img/reset.png" alt="" style="width: 100px; margin-top: 0px;" ></button>
+                    </div>
+                </form>
+                <!-- </div> -->
+                <div class="col-sm-3"></div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+    <br><br><br>
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+            
+        <!-- JavaScript Code of Form Validation -->
+        <script>
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+            (function () {
+                'use strict'
+
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.querySelectorAll('.needs-validation')
+
+                // Loop over them and prevent submission
+                Array.prototype.slice.call(forms)
+                    .forEach(function (form) {
+                        form.addEventListener('submit', function (event) {
+                            if (!form.checkValidity()) {
+                                event.preventDefault()
+                                event.stopPropagation()
+                            }
+
+                            form.classList.add('was-validated')
+                        }, false)
+                    })
+            })()
+        </script>
+</body>
+</html>
